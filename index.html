@@ -1,0 +1,727 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>ZEBS@JAVA</title>
+
+    <!-- @DEV JAVA ZEBS mon fichier CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!--
+
+Site DEVelopper par NGUENA ZEBS HAUPUR FAUST/ le 18 aout 2022 
+
+YAOUNDE CAMEROUN
+
+licence pro
+-->
+
+    <!-- @DEV JAVA ZEBS Quelque importation CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+<body>
+
+  <!-- ***** @DEV JAVA ZEBS Debut pour le chargement ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** fin ***** -->
+
+  <!-- ***** @DEV JAVA ZEBS Header ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- *****@DEV JAVA ZEBS Logo ZEBS ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/logo.png" width="70px" height="50px">
+            </a>
+            <!-- ***** fin ***** -->
+            <!-- ***** @DEV JAVA ZEBS Menu  ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Accueil</a></li>
+              <li class="scroll-to-section"><a href="#services">Decouverte</a></li>
+              <li class="scroll-to-section"><a href="#about">A propos</a></li>
+              <li class="scroll-to-section"><a href="#pricing">Site Utile</a></li>
+              <li class="scroll-to-section"><a href="#newsletter">Joindre</a></li>
+              <li><div class="gradient-button"><a id="modal_trigger" href="#modal"><i class="fa fa-sign-in-alt"></i>Connectez vous maintenant</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** @DEV JAVA ZEBS Menu fin ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** @DEV JAVA ZEBS Header fin ***** -->
+  
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Connexion</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+    <section class="popupBody">
+        <!--  @DEV JAVA ZEBS Connexion social -->
+        <div class="social_login">
+            <div class="">
+                <a href="https://web.facebook.com/" class="social_box fb">
+                    <span class="icon"><i class="fab fa-facebook"></i></span>
+                    <span class="icon_title">Connecter avec Facebook</span>
+
+                </a>
+
+                <a href="https://accounts.google.com/signin/v2/identifier?hl=fr&continue=https%3A%2F%2Fwww.google.com%3Fhl%3Dfr&ec=GAlA8wE&flowName=GlifWebSignIn&flowEntry=AddSession" class="social_box google">
+                    <span class="icon"><i class="fab fa-google-plus"></i></span>
+                    <span class="icon_title">Connectez-vous avec Google</span>
+                </a>
+            </div>
+
+            <div class="centeredText">
+                <span>Ou utilisez votre adresse e-mail</span>
+            </div>
+
+            <div class="action_btns">
+                <div class="one_half"><a href="#" id="login_form" class="btn">Connexion</a></div>
+                <div class="one_half last"><a href="#" id="register_form" class="btn">S'inscrire</a></div>
+            </div>
+        </div>
+
+        <!-- @DEV JAVA ZEBS Username & Password Login form -->
+        <div class="user_login">
+            <form>
+                <label>E-mail / Username</label>
+                <input type="text" />
+                <br />
+
+                <label>Mot de passe</label>
+                <input type="password" required/>
+                <br />
+
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" required/>
+                    <label for="remember">Se souvenir de moi sur cet ordinateur</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i>retour</a></div>
+                    <div class="one_half last"><a href="index.html" class="btn btn_red">Connexion</a></div>
+                </div>
+            </form>
+
+            <a href="#" class="forgot_password">mot de passe oublié?</a>
+        </div>
+
+        <!-- @DEV JAVA ZEBS Register Form -->
+        <div class="user_register">
+            <form action="https://formspree.io/f/xzbwblbn" method="post">
+                <label>Nom et prénom</label>
+                <input type="text" required>
+                <br />
+
+                <label>Adresse e-mail</label>
+                <input type="email" required>
+                <br />
+
+                <label>mot de passe</label>
+                <input type="password" required>
+                <br />
+
+                <div class="checkbox">
+                    <input id="send_updates" type="checkbox" required>
+                    <label for="send_updates">Envoyez-moi des mises à jour occasionnelles par e-mail</label>
+                </div>
+
+                <div class="action_btns">
+                    <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> retour</a></div>
+                    <div class="one_half last"><a href="mailto:nguenahaupur@gmail.com" class="btn btn_red">S'inscrire</a></div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3>Obtenez les codes sources java de ZEBS à Github</h3>
+                    <p>Le Java est un langage de programmation orientée objet développé par Sun Microsystems en 1995, et racheté depuis par Oracle.</p>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="white-button first-button scroll-to-section">
+                      <a href="https://github.com/PILOTEZEBS">Github</a>
+                    </div>
+                    <div class="white-button scroll-to-section">
+                      <a href="https://github.com/NGcodeX">NGcodeX</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="assets/images/slider-dec.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4> DECOUVRE  <em>JAVA SE, JAVA EE / Un langage rien que </em> pour toi</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Si vous avez besoin d'en connaitre plus sur DEV-ZEBS USJ, veuillez visiter <a rel="nofollow" href="https://pilotezebs.github.io/Mon__CV/" target="_blank">CV_DEveloppeur Junior</a> Blog. Si vous avez besoin des projets JAVA SE, rendez-vous sur <a href="https://github.com/PILOTEZEBS/Langage__JAVA" target="_parent">Langage_JAVA @DevZEBS</a> pour plus d'informations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+            <h4>Serveur d'application</h4>
+            <p>JAVA EE utilise un serveur d'application pour fonctionner J ai choisi Tomcat qui est un produit de la fondation Apache...</p>
+            <div class="text-button">
+              <a href="https://tomcat.apache.org/">Lire plus <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Compilateur JDK</h4>
+            <p>L ecriture de votre code java en premierement compiler puis interpreter. la JDK sera votre compilateur pour votre code...</p>
+            <div class="text-button">
+              <a href="https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.zip">Telecharger <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Notion d'heritage</h4>
+            <p>l'heritage et la structuration de votre code est essentielle pour mieux gerer vos class afin d eviter des erreurs sur JAVA...</p>
+            <div class="text-button">
+              <a href=" https://fr.wikibooks.org/wiki/Programmation_Java/H%C3%A9ritage">Lire plus <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item fourth-service">
+            <div class="icon"></div>
+            <h4>Vos contributions</h4>
+            <p>Vos pouvez me joindre sur github ou Whatsapp et contribuer a mes projets JAVA meme si vous etes debutant comme moi. ensemble apprenons plus...</p>
+            <div class="text-button">
+              <a href=" https://api.whatsapp.com/send?phone=237692077005">Lien Whatsapp<i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4>À propos  <em>de ce que je fais et</em> qui suis-je</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Je suis NGUENA ZEBS etudiant à l'Université Saint Jean et Developpeur JAVA SE/EE JUNIOR. JAVA en un langage par exelence que j'utilise pour le developpement d application. Grace à ma formation à l'Université Saint Jean, OpenclassRom et HACKERRANK, j'ai eu la vision des choses dans le domaine du web avec JAVA EE et son serveur d'app Tomcat de la fondation APACHE. </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="https://institutsaintjean.org/">Université Saint Jean</a></h4>
+                <p>Decouvrir L'université</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="https://www.hackerrank.com/certificates/812c4907c079">Certification JAVA(BASIC)</a></h4>
+                <p>Voir la certification...</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="https://openclassrooms.com/">OpenclassRom</a></h4>
+                <p>Debuter des maintenant...</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="https://github.com/PILOTEZEBS/Langage__JAVA">Github JAVA</a></h4>
+                <p>Voir mes repositories JAVA...</p>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <p>la programmation💻 et l aviation✈ sont les domaines qui m'ont toujours passionnés. j'essaye d'êtres pro afin de réaliser mon Rêve🙏🙏😎😎</p>
+              <div class="gradient-button">
+                <a href="https://raw.githubusercontent.com/PILOTEZEBS/Langage__JAVA/master/POO-1-Java.pdf">Telecharger le PDF JAVA</a>
+              </div>
+              <span>*Pas besoin d'être un expert</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="assets/images/about-right-dec.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="clients" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Se que disent <em>Mes camarades</em> Sur le langage JAVA</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Sans vous mentir le java est trop passionant 😎mais aussi assez complexe à comprendre à cause de sa syntaxe🤣😂</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+                <div class="col-lg-7 align-self-center">
+                  <div class="menu">
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>NGdream</h4>
+                            <span class="date">30 juillet 2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Developpeur C++</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.8</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Jason</h4>
+                            <span class="date">4 aout 2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Developpeur Angular</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.5</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Daniel</h4>
+                            <span class="date">10 aout 2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Developpeur JS</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>Mercy</h4>
+                            <span class="date">15 aout 2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Devloppeur JAVA</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">3.9</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="last-thumb">
+                      <div class="thumb">
+                        <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-12">
+                            <h4>ALAN</h4>
+                            <span class="date">17 aout 2022</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 d-none d-sm-block">
+                            <span class="category">Developpeur front</span>
+                          </div>
+                          <div class="col-lg-4 col-sm-4 col-12">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <span class="rating">4.3</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="col-lg-5">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“j’ai trouvé dans ce langage la solution à beaucoup de problèmes. Voilà trois raisons qui font que c’est mon langage favori.
+
+                                  ”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.png" alt="">
+                                <div class="right-content">
+                                  <h4>NGUENA ZEBS</h4>
+                                  <span>LICENCE</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Java a une syntaxe simple et assez fermée. Il y a rarement différentes façons d’exprimer la même chose et cela favorise l’homogénéisation du code lorsqu’il est écrit en équipe. ”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.png" alt="">
+                                <div class="right-content">
+                                  <h4>NGUENA ZEBS</h4>
+                                  <span>DEVELOPPEUR JAVA JUNIOR</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Java dispose d’un très grand écosystème et c’est un peu une histoire d’œuf et de poule. En effet, sa popularité fait que son écosystème se développe, mais c’est aussi grâce à son écosystème qu’il est populaire.”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.png" alt="">
+                                <div class="right-content">
+                                  <h4>DEV-JAVA SE/EE</h4>
+                                  <span>Institut SAINT jEAN</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Côté outillage, Java est également bien placé. Il existe une multitude d’outils pour le build, pour l’intégration continue, l’analyse statique de code, le profiling, le déploiement, le monitoring…”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.png" alt="">
+                                <div class="right-content">
+                                  <h4>HAUPUR FAUST</h4>
+                                  <span>ETUDIANT</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <div class="client-content">
+                                <img src="assets/images/quote.png" alt="">
+                                <p>“Il existe des bibliothèques ou des frameworks pour tout : de l’interface graphique, du web, de la ligne de commande, de la manipulation de documents Office…”</p>
+                              </div>
+                              <div class="down-content">
+                                <img src="assets/images/client-image.png" alt="">
+                                <div class="right-content">
+                                  <h4>PIOTE ZEBS</h4>
+                                  <span>FO a NGcodeX</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>S'inscrire <em>aux sites</em> maintenant</h4>
+            <img src="assets/images/heading-line-dec.png" alt="">
+            <p>Vite! les amies inscrivez vous a github et debutons notre aventure tous en ensemble. es-tu prêt??</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">users:2</span>
+            <h4>OpenclassRom</h4>
+            <div class="icon">
+              <img src="assets/images/op.png" alt="OpenClassRom" width="90px" height="90px">
+            </div>
+            <ul>
+              <li>Choisir son langage</li>
+              <li>obtenir des certifications</li>
+              <li>Chatez avec la team</li>
+              <li>Premium avec la FNE</li>
+    
+            </ul>
+            <div class="border-button">
+              <a href="https://openclassrooms.com/">S'inscrire maintenant</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-pro">
+            <span class="price">users:5</span>
+            <h4>GITHUB</h4>
+            <div class="icon">
+              <img src="assets/images/git.png" alt="Github" width="90px" height="90px">
+            </div>
+            <ul>
+              <li>Push des codes</li>
+              <li>forker des projets</li>
+              <li>votre premier commit</li>
+              <li>Joindre la communauté NGcodeX</li>
+              
+            </ul>
+            <div class="border-button">
+              <a href="https://github.com/">S'inscrire maintenant</a>
+            </div>
+            <div class="border-button">
+              <a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/23216272/d92b9eaf-9062-4106-82e0-4fd8986d3d6a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220819%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220819T101435Z&X-Amz-Expires=300&X-Amz-Signature=46b2eccb71fd36bfdb49f4a37dbc585f4bbb7f2523c4c2bf8790cf3250a2c2a5&X-Amz-SignedHeaders=host&actor_id=94785948&key_id=0&repo_id=23216272&response-content-disposition=attachment%3B%20filename%3DGit-2.37.2.2-64-bit.exe&response-content-type=application%2Foctet-stream">Telecharger Git Bash</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="pricing-item-regular">
+            <span class="price">users:1</span>
+            <h4>HACKERRANK</h4>
+            <div class="icon">
+              <img src="assets/images/hack.png" alt="HackerRank" width="90px" height="90px">
+            </div>
+            <ul>
+              <li>Obtenir des badges</li>
+              <li>faire des tests</li>
+              <li>Obtenir des Certifications</li>
+              <li>Partager votre experience</li>
+              
+            </ul>
+            <div class="border-button">
+              <a href="https://www.hackerrank.com/">S'inscrire maintenant</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+  <footer id="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4>Rejoignez ma liste de diffusion pour recevoir les dernières tendances JAVA</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="https://formspree.io/f/xzbwblbn" method="post">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <input type="address" name="address" class="email" placeholder="Adresse e-mail..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <button type="submit" class="main-button">Abonnez-vous maintenant<i class="fa fa-angle-right"></i></button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Contact moi</h4>
+            <p>ETOK KOSS (Simbock), YAOUNDE, CAMEROUN</p>
+            <p><a href="#">+237 6 92 07 70 05</a></p>
+            <p><a href="#">haupur.nguena@institutsaintjean.org</a></p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>A propos</h4>
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">A props</a></li>
+              <li><a href="#">Temoignages</a></li>
+              <li><a href="#">Partenaire</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Github</a></li>
+              <li><a href="#">instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>Lien utile</h4>
+            <ul>
+              <li><a href="https://zestedesavoir.com/tutoriels/646/apprenez-a-programmer-en-java/">Apprendre JAVA SE</a></li>
+              <li><a href="https://www.cours-gratuit.com/cours-j2ee/cours-initiation-a-java-ee-pdf">Apprendre JAVA EE</a></li>
+              <li><a href="https://interservices.fr/blog/assistance-informatique/informatique-pour-nuls-etapes-pour-apprendre-programmation">Programmation</a></li>
+              <li><a href="https://wewantcode.com/fr/course/html5/html.html">Developpement</a></li>
+              <li><a href="https://htpratique.com/applications-actualite/">Applications nouvelles</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Application Dev NGcodeX</a></li>
+              <li><a href="https://httpd.apache.org/">Serveur Web</a></li>
+              <li><a href="https://tomcat.apache.org/">Serveur d'Apps</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-widget">
+            <h4>A propos de mon organisation</h4>
+            <div class="logo">
+              <img src="assets/images/logo.png" alt="PILOTE ZEBS" width="150px" height="100px">
+            </div>
+            <p>C'est pas en fonction du niveau d'une autre personne que vous allez definir que vous êtes faible. developper vos competences et vendez vous sur le marché.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <p>Copyright © 2022 USJ-Code. All Rights Reserved. 
+          <br>Design: <a href="https://github.com/PILOTEZEBS" target="_blank" title="css templates">NGUENA ZEBS</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+</body>
+</html>
